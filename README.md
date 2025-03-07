@@ -71,3 +71,4 @@ SELECT password_hash FROM mqtt_acl where username = ${username} LIMIT 1
 ### No arquivo de ACL em autorização
 
 habilitar  `{deny, all}.` para bloquear acesso sem passar pelo posrgresql
+Na tela de admin no emqx
