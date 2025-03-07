@@ -68,6 +68,12 @@ Teste para autenticação
 SELECT password_hash FROM mqtt_acl where username = ${username} LIMIT 1
 ```
 
+Query para obter a lista de topic cadastrdos
+
+```sql
+SELECT action, permission, jsonb_array_elements_text(topic) AS topic FROM mqtt_acl WHERE username = ${username}
+```
+
 ### No arquivo de ACL em autorização
 
 habilitar  `{deny, all}.` para bloquear acesso sem passar pelo posrgresql
