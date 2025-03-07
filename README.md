@@ -77,3 +77,4 @@ SELECT action, permission, jsonb_array_elements_text(topic) AS topic FROM mqtt_a
 ### No arquivo de ACL em autorização
 
 habilitar  `{deny, all}.` para bloquear acesso sem passar pelo posrgresql
+Na tela de admin no emqx
